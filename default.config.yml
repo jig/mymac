@@ -6,20 +6,37 @@ configure_terminal: true
 configure_osx: true
 
 # Set to 'true' to configure the Dock via dockutil.
-configure_dock: false
+configure_dock: true
 dockitems_remove:
   - TV
   - "App Store"
   - News
   - Reminders
   - Contacts
+  - Messages
+  - FaceTime
+  - Photos
+  - Music
+  - Calendar
+  - Freeform
+  - Maps
+  - Mail
 # - Launchpad
 # - Podcasts
 
 dockitems_persist:
   - name: iterm2
     path: "/Applications/iTerm.app/"
+    pos: 3
+  - name: VSCode
+    path: "/Applications/Visual\ Studio\ Code.app/"
     pos: 4
+  - name: Chrome
+    path: "/Applications/Google\ Chrome.app/"
+    pos: 5
+  - name: Firefox
+    path: "/Applications/Firefox.app/"
+    pos: 6
 
 configure_sudoers: false
 sudoers_custom_config: ""
@@ -77,9 +94,10 @@ homebrew_cask_apps:
   - google-chrome
   - sequel-ace
   - iterm2
+  - visual-studio-code
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps: []
+mas_installed_apps:
 mas_email: ""
 mas_password: ""
 
