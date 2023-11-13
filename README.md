@@ -11,7 +11,7 @@ You better execute this on virtual machine with [Tart](https://tart.run).
 Deploy on the MacOS release of your liking:
 
 ```bash
-tart tart clone ghcr.io/cirruslabs/macos-ventura-base:latest mymac
+tart clone ghcr.io/cirruslabs/macos-ventura-base:latest mymac
 tart run mymac
 ssh -A admin@$(tart ip mymac)
 ```
